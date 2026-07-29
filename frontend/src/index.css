@@ -1,0 +1,25 @@
+:root {
+  /* 青を基調としたカラーパレット */
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-primary-light: #dbeafe;
+  --color-bg: #f1f5f9;
+  --color-surface: #ffffff;
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-danger: #dc2626;
+
+  color-scheme: light;
+  font-family: system-ui, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+}

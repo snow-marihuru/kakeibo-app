@@ -1,0 +1,191 @@
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  color: var(--color-primary-dark);
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+
+.app-header p {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.card h2 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+/* アップロードカード */
+.upload-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.preview-image {
+  display: block;
+  max-width: 240px;
+  max-height: 240px;
+  margin-top: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.error-message {
+  color: var(--color-danger);
+  margin-top: 12px;
+}
+
+/* ボタン（青を基調） */
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+}
+
+.btn-primary:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.btn-delete {
+  background: transparent;
+  color: var(--color-danger);
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.btn-delete:hover {
+  background: #fee2e2;
+}
+
+/* グラフ */
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.chart-wrapper {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.empty-message {
+  color: var(--color-text-muted);
+}
+
+/* 一覧テーブル */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.receipt-table th,
+.receipt-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.receipt-table th {
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.price-cell {
+  font-weight: 600;
+  text-align: right;
+}
+
+.price-negative {
+  color: var(--color-danger);
+}
+
+.category-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 警告バナー */
+.warning-banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.warning-banner ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #92400e;
+}
+
+.warning-banner li + li {
+  margin-top: 4px;
+}
+
+.btn-dismiss {
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 6px 14px;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.btn-dismiss:hover {
+  background: var(--color-primary-light);
+}
